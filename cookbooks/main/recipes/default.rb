@@ -14,7 +14,7 @@ require_recipe "sphinx"
 # require_recipe "ban"
 
 # uncomment to use the sidekiq recipe. See cookbooks/sidekiq/readme.md for documentation.
-# require_recipe "sidekiq"
+require_recipe "sidekiq"
 
 #uncomment to turn on memcached
 # require_recipe "memcached"

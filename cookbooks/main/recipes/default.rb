@@ -16,6 +16,18 @@ require_recipe "sphinx"
 # uncomment to use the sidekiq recipe. See cookbooks/sidekiq/readme.md for documentation.
 require_recipe "sidekiq"
 
+
+enable_package "media-gfx/imagemagick" do
+  version "6.7.8.8-r1"
+end
+
+package "media-gfx/imagemagick" do
+  version "6.7.8.8-r1"
+  action :install
+end
+
+
+
 #uncomment to turn on memcached
 # require_recipe "memcached"
 
